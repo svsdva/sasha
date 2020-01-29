@@ -42,7 +42,7 @@
     }
 
     #row1 {
-        background-color: #5C74BA;
+        background-color: #b55f2a;
     }
 
     #row1_text {
@@ -51,7 +51,7 @@
     }
 
     #row2 {
-        background-color: #64A9DC;
+        background-color: #ffb703;
     }
 
     #row3 {
@@ -128,15 +128,16 @@
     }
 
     #row1 {
-        background-color: #5C74BA;
+        background-color: #b55f2a;
     }
 
     #row1_text {
         display: none;
+        font-size: 100%;
     }
 
     #row2 {
-        background-color: #64A9DC;
+        background-color: #ffb703;
     }
 
     #row3 {
