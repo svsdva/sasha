@@ -9,7 +9,7 @@ body {
     align-items: center;
     font-family: 'Montserrat', sans-serif;
     padding: 1.5%;
-    background-color: #ffd9cc;
+    background-color: #ffefea;
 }
 
 #logo {
@@ -19,7 +19,7 @@ body {
 #img {
     height: 100%;
     width: 100%;
-    border-radius: 800%;
+    border-radius: 50%;
 }
 
 .row {
@@ -28,6 +28,7 @@ body {
     padding: 1%;
     cursor: pointer;
     text-align: center;
+    border-radius: 15px;
 }
 
 #row1 {
@@ -38,6 +39,14 @@ body {
     background-color: #C8AD7E;
 }
 
+#row2_list {
+    list-style-type: none;
+}
+
+#row2_list li:before {
+    content: "- ";
+}
+
 #row3 {
     background-color: #B07A68;
 }
@@ -46,11 +55,17 @@ body {
     display: none;
 }
 
-#connect {
+#connect,
+#clients,
+#row3_text {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+#row3_text {
+    display: none;
 }
 
 #whatsapp,
@@ -58,9 +73,32 @@ body {
     margin: 1%;
 }
 
+#clients {
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.client {
+    margin: 2%;
+    border-radius: 50%;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.answer {
+    margin: 2%;
+}
+
+
+
+#sep3 {
+    margin: 1%;
+}
+
 .social_logo {
     width: 100%;
     height: 100%;
+    border-radius: 200px;
 }
 
 @media (min-width: 576px) {
@@ -79,23 +117,36 @@ body {
         font-size: 400%
     }
 
-    #row1_text {
+    .row_text {
+        padding-left: 2%;
+        text-align: left;
         font-size: 400%;
+        width: 100%;
     }
 
-    #sep2 {
+    #row3_text {
+        flex-direction: column;
+    }
+
+    .answer {
+        height: 50%;
+        width: 50%;
+    }
+
+    #sep2,
+    #sep3 {
         font-size: 405%;
     }
 
     #whatsapp,
     #inst {
         width: 100%;
-        height: 10%;
+        height: 100%;
     }
 
-    .social_logo {
-        width: 100%;
-        height: 100%;
+    .client {
+        width: 15%;
+        height: 15%;
     }
 }
 
@@ -119,7 +170,23 @@ body {
         font-size: 100%;
     }
 
-    #sep2 {
+    .row_text {
+        text-align: justify;
+        font-size: 100%;
+        width: 50%;
+    }
+
+    #row3_text {
+        flex-direction: row;
+    }
+
+    .answer {
+        height: 40%;
+        width: 40%;
+    }
+
+    #sep2,
+    #sep3 {
         font-size: 105%;
     }
 
@@ -127,5 +194,10 @@ body {
     #inst {
         width: 15%;
         height: 15%;
+    }
+
+    .client {
+        width: 10%;
+        height: 10%;
     }
 }
