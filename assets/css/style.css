@@ -41,6 +41,11 @@ body {
 
 #row2_list {
     list-style-type: none;
+    line-height: 1.5;
+}
+
+#row2_list li {
+    margin: 2%
 }
 
 #row2_list li:before {
@@ -92,7 +97,7 @@ body {
 
 
 #sep3 {
-    margin: 1%;
+    margin: 2%;
 }
 
 .social_logo {
@@ -108,19 +113,19 @@ body {
     }
 
     #name {
-        font-size: 400%;
+        font-size: 300%;
     }
 
     .row {
         height: 100%;
         width: 100%;
-        font-size: 400%
+        font-size: 300%
     }
 
     .row_text {
         padding-left: 2%;
         text-align: left;
-        font-size: 400%;
+        font-size: 300%;
         width: 100%;
     }
 
@@ -135,7 +140,7 @@ body {
 
     #sep2,
     #sep3 {
-        font-size: 405%;
+        font-size: 305%;
     }
 
     #whatsapp,
