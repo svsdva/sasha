@@ -45,11 +45,11 @@ body {
 }
 
 #row2_list li {
-    margin: 2%
+    margin: 2%;
 }
 
 #row2_list li:before {
-    content: "- ";
+    content: "⚜ ";
 }
 
 #row3 {
@@ -58,6 +58,12 @@ body {
 
 .row_text {
     display: none;
+
+}
+
+.bold {
+    font-weight: 900;
+    color: #7b0323;
 }
 
 #connect,
@@ -67,6 +73,11 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+#row1_text {
+    text-indent: 7%;
+    padding: 2%
 }
 
 #row3_text {
@@ -123,9 +134,8 @@ body {
     }
 
     .row_text {
-        padding-left: 2%;
-        text-align: left;
-        font-size: 300%;
+        text-align: justify;
+        font-size: 250%;
         width: 100%;
     }
 
@@ -176,7 +186,6 @@ body {
     }
 
     .row_text {
-        text-align: justify;
         font-size: 100%;
         width: 50%;
     }
